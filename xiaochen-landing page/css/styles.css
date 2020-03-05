@@ -96,7 +96,7 @@ h1{
 	margin:0 auto 10px;
 }
 
-.form  .p1{
+.form .p1{
 	font-size:0.75rem;
 	text-align: start;
 }
@@ -112,7 +112,8 @@ h1{
 	border-radius:5px;
 }
 
-.form .b1{
+
+.form button{
 	background: #83eab0;
 	width: 100%;
 	padding:10px;
@@ -183,7 +184,8 @@ footer .wi{
 footer .icon{
 	display:flex;
 	margin:10px auto;	
-	justify-content: center;		
+	justify-content: center;
+	text-align: center;	
 }
 
 .facebook,

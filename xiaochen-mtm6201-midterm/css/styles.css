@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** css reset **/
+
+/** Style the font type of the entire page **/
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/** Style header part **/
+.container{
+    background-color:white;
+}
+
+.site-header{
+    background-color:#facf60dd;   
+}
+
+.banner{
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.banner img{
+    grid-column: 1/2;
+    grid-row:1/3;
+    width:100%; 
+    padding:0;
+    border:0;
+}
+
+/** Style navigation part **/
+.site-header ul{
+    list-style-type: none;
+}
+
+.site-header ul li{
+    border-bottom: 1px solid #f8b300;
+    text-align:center;
+}
+
+.site-header li a{
+    display:block;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    font-size:1rem;
+}
+
+nav a.active,
+nav a:hover{
+    background-color:#f8b300;
+    color:white;   
+}
+
+/** Style the footer part **/
+.site-footer{
+    background-color: #facf60dd; 
+}
+
+.site-footer p{
+    text-align: center;
+}
+
+/** Style the copyright **/
+.copyright{
+    font-size:0.8rem;
+    color: #835649;
+    padding:15px;
+}
+
+
+                                   /** porfile page **/
+/** Style introduction section **/
+.section1{
+   padding:0 50px;  
+}
+
+.section1 img{
+    width:100%; 
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.6);  
+    margin: 40px auto 50px;
+}
+
+h2{
+    color: #f8b300;
+    font-weight:400;
+    font-size:1.25rem;
+    margin-bottom:10px;
+    text-align: left;
+}
+
+h1{
+    font-weight: 500;
+    font-size:3rem;
+    margin-bottom:30px;
+    text-align: left;
+}
+
+p{
+    text-align: left;
+    font-weight: 300;
+    margin-bottom:25px;
+    line-height: 30px;
+}
+
+/** style PHOTO section **/
+.section2{
+    padding:0 50px;
+}
+
+.section2 h1{
+    margin-top: 80px;
+    text-align: left;
+}
+
+.section2 img{
+    width:100%; 
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.6);   
+}
+
+.section2 p{
+    text-align: center;
+    font-weight: 400;    
+}
+                                    /** porfile page **/
+
+
+                                    /** discography page **/
+.container{
+    padding:50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1% 5%;
+    margin-bottom: 100px;
+}
+
+.container img{
+    width:100%;
+    border:1px solid rgb(213, 213, 213);
+}
+
+.container .a{
+    grid-column: 1/3;
+}
+                                /** discography page **/
+
+
+                                /** tour page **/
+.section0{
+    padding:50px;
+}
+
+.section0 img{
+    display: block;
+    width: 100%;
+    margin:0 auto;    
+}
+
+/** Style the tour table **/
+table{
+    width: 100%;
+    margin:50px auto;
+    font-weight: 300;
+    border: 2px solid rgb(91, 91, 91);   
+}
+
+caption{
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+thead th{
+    font-weight: 400;
+}
+
+th,
+td{
+   padding:10px 20px; 
+   line-height: 20px;
+   background-color:#facf60dd 
+}
+
+.date{
+    border-bottom: 1px solid rgb(91, 91, 91);
+}
+
+.location{
+    border-bottom:1px solid rgb(91, 91, 91);
+}
+                                     /** tour page **/
+
+
+@media screen and (min-width:650px){
+    /** responsive navigation **/
+    .site-header ul{
+        display:-webkit-flex;
+        display:flex;
+    }
+
+    .site-header ul li{
+        width: 33.33%;
+        border-right: 1px solid #c48876;
+        border-bottom: none;
+    }
+
+    .site-header li a{
+        font-size:1.25rem;
+        padding:15px;
+    }
+
+    /** responsive introduction **/
+    .section1{
+        padding:0 100px;
+        margin-top:50px;
+    }
+    .section1 img{
+        float: left;
+        margin-right:50px;
+        max-width: 500px;
+    }
+
+    /** responsive PHOTO **/
+    .section2{
+        padding:0 100px;
+        margin-bottom: 50px;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:0 5%; 
+    }
+
+    /** responsive discography page **/
+    .container{
+        padding: 80px 100px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:2% 5%;
+        margin-bottom: 80px;
+    }
+
+    .container .a{
+        grid-column: 1/2;
+    }
+    
+    /** responsive tour page **/
+    table{
+        padding:100px;
+        max-width: 600px;
+    }
+
+    caption{
+        font-size: 2.5rem;
+    }
+
+    .section0{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:0 5%;
+    }
+
+    .section0 img{
+        margin-top: 30px;
+        max-width: 600px;   
+    }
+
+  
+}
